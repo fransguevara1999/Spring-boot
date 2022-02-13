@@ -92,6 +92,12 @@ public class HomeController {
 		return "usuario/carrito";
 	}
 	
+	@GetMapping("/order")
+	public String order() {
+		
+		return "usuario/resumenorden";
+	}
+	
 	//quitar un producto del carrito
 	@GetMapping("/delete/cart/{id}")
 	public String deleteProductoCart(@PathVariable Integer id, Model model) {
@@ -114,6 +120,7 @@ public class HomeController {
 		
 		return "usuario/carrito";
 	}
+	
 
 	
 	
